@@ -8,6 +8,10 @@ const connect = () => {
 
   })
 
+  conn.on('connect', () => {
+    conn.write('Name: A10');
+  });
+
   conn.on('data', (data) => {
     console.log(`server: ${data}`)
   });
