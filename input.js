@@ -13,7 +13,10 @@ const handleUserInput = (char) => {
     connection.write('Move: down');
   } else if (char === 'a') {
     connection.write('Move: left');
-
+  } else if (char === 'c') {
+    connection.write('Say: u ded boi')
+  } else if (char === 'v') {
+    connection.write('Say: ur 10ply bud');
   }
 }
 
